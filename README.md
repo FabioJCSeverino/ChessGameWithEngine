@@ -1,6 +1,46 @@
-# ChessGameWithEngine
-Chess terminal game with enemy engine written in c++. Engine uses AlphaBeta-Prunning to search for maximized score positions for each player, MVV-LVA (Most Valuable Victim - Least Valuable Attacker) heuristics based move sort, Killer Moves, Quiescence function, Iterative Deepening with Transposition Table using ZobristHash, Opening book (Sqlite Db-Conection) etc. Complex heuristics based eval function with concepts such as pawn islands, piece placement, attacked squares and king safety.
+# Chess Engine in C++
 
-The engine utilizes a well crafted evaluation function. An NNUE was trained in python and implemented in C++ just as a learning goal, but not integrated in the engine yet. NNUE transforms FEN encoded chess position to features in a 769 sized vector (64 squares * 12 pieces * 2 players + side to move) and outputs predicted stockfish evaluation of position, although the NNUE model needs more training since it seemed to have almost randomic predictions. I plan on continuing this project in the future.
+A chess engine written from scratch in C++, featuring alpha-beta
+search, move ordering, quiescence search, transposition tables,
+Zobrist hashing, opening books, and a handcrafted evaluation function.
 
-The engine has a performance around 1800-1900 ELO with consisting results. Major improvements include bitboard representation for increased search depth and NNUE implementing.
+## Features
+
+- Alpha-Beta pruning
+- Iterative deepening
+- Quiescence search
+- MVV-LVA move ordering
+- Killer Moves heuristic
+- Transposition tables
+- Zobrist hashing
+- Opening book
+- Bitboard representation
+- Handcrafted evaluation function
+- Experimental NNUE implementation
+
+## Evaluation Function
+
+The engine uses a handcrafted evaluation function considering factors such as:
+
+- Material
+- Piece-square tables
+- Pawn structure
+- Pawn islands
+- King safety
+- Attacked squares
+- Piece placement
+
+## NNUE
+
+An NNUE model was trained in Python and implemented in C++ as an
+independent experiment.
+
+The current NNUE implementation is not integrated into the main engine yet.
+
+## Performance
+
+The engine currently reaches approximately [X] Elo under [TEST CONDITIONS].
+
+## Build & Run
+
+...
