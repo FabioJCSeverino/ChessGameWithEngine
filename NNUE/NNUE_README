@@ -1,0 +1,2 @@
+NNUE_Train defines and trains the model through a local connection with Stockfish, saves it to modelo.pt.
+teste.cpp loads the model and runs a prediction in a FEN encoded postion, outputs predicted value based on how good the model thinks the position is.
