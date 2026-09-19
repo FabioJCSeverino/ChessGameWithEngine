@@ -4,6 +4,12 @@ A chess engine written from scratch in C++, featuring alpha-beta
 search, move ordering, quiescence search, transposition tables,
 Zobrist hashing, opening books, and a handcrafted evaluation function.
 
+# Movement
+
+The game is played and rendered in the terminal, movement consists of the initial character of chosen piece, current position, 2 non-space characters and final position. Eg: pe2--e4.
+
+![Chess Engine Img](ChessBoard.png)
+
 ## Features
 
 - Alpha-Beta pruning
@@ -14,7 +20,6 @@ Zobrist hashing, opening books, and a handcrafted evaluation function.
 - Transposition tables
 - Zobrist hashing
 - Opening book
-- Bitboard representation
 - Handcrafted evaluation function
 - Experimental NNUE implementation
 
