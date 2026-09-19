@@ -39,8 +39,4 @@ The current NNUE implementation is not integrated into the main engine yet.
 
 ## Performance
 
-The engine currently reaches approximately [X] Elo under [TEST CONDITIONS].
-
-## Build & Run
-
-...
+The engine is estimated to be around 1900 ELO. Tested against different Stockfish versions.
