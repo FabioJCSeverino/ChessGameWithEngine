@@ -48,3 +48,8 @@ The engine has an estimated playing strength of approximately 1900 Elo
 based on testing against different Stockfish versions.
 
 This estimate is informal and depends on the testing configuration.
+
+## Build
+To build on Linux:
+
+g++ -std=c++20 -O2 xadrez.cpp -o chess -lSQLiteCpp -lsqlite3 -lpthread
